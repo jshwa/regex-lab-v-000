@@ -15,7 +15,5 @@ def first_word_capitalized_and_ends_with_punctuation?(text)
 end
 
 def valid_phone_number?(phone)
-  valid = nil
-  valid << phone.grep(/\d{9}/)
-  valid = nil ? false : true
+  phone.grep(/\d{10}/) == nil ? false : true
 end
